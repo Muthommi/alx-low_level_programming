@@ -1,4 +1,4 @@
-CC = gg
+CC = gcc
 
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
@@ -16,7 +16,7 @@ $(NAME): $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 %.o: %.c
-	$(CC) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
 	$(RM) *~ $(NAME)
