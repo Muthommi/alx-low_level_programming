@@ -26,6 +26,7 @@ fclean: clean
 
 re: fclean all
 
+# Dependencies
 $(OBJ): $(SRC) m.h
 
-.PHONY: all clean oclean fclean re
+.PHONY: 
